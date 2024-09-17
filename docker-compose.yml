@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: ./telegram-bot
+    ports:
+      - "5000:5000"
+    depends_on:
+      - nlp-service
+      - recommendation-service
+    networks:
+      - botnet
+
+  nlp-service:
+    build: ./nlp-service
+    ports:
+      - "5001:5001"
+    networks:
+      - botnet
+
+  recommendation-service:
+    build: ./recommendation-service
+    ports:
+      - "5003:5003"
+    networks:
+      - botnet
+
+networks:
+  botnet:
+    driver: bridge
