@@ -16,7 +16,6 @@ Este projeto consiste na implementação de um chatbot para o **Telegram** utili
 O projeto é dividido em três microsserviços principais, cada um rodando em seu próprio container:
 
 1. **NLP Service**: 
-   - Serviço responsável por processar e interpretar as mensagens do usuário.
    - Envia a resposta gerada para o chatbot baseado na análise de linguagem natural.
    
 2. **Recommendation Service**: 
@@ -35,7 +34,6 @@ O projeto é dividido em três microsserviços principais, cada um rodando em se
 - **Docker**: Utilizado para criar containers isolados para cada serviço.
 - **Telegram API**: Para conectar o chatbot ao Telegram.
 - **NLP**: Técnica de processamento de linguagem natural para interpretar as mensagens.
-- **Sistema de Recomendações**: Algoritmo que sugere tópicos baseados nas interações anteriores do usuário.
 
 ## Como Executar o Projeto
 
@@ -48,7 +46,7 @@ O projeto é dividido em três microsserviços principais, cada um rodando em se
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/juniorrkcm/DCC602-SISTEMAS-DISTRIBUIDOS-MARCIA-PAULO
    cd seu-repositorio
    ```
 
